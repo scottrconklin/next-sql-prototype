@@ -174,6 +174,14 @@ exports.Prisma.TodoScalarFieldEnum = {
   createdAt: 'createdAt'
 };
 
+exports.Prisma.MediaItemScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  s3Key: 's3Key',
+  s3Url: 's3Url',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -191,7 +199,8 @@ exports.Prisma.ModelName = {
   Session: 'Session',
   User: 'User',
   VerificationToken: 'VerificationToken',
-  Todo: 'Todo'
+  Todo: 'Todo',
+  MediaItem: 'MediaItem'
 };
 
 /**

@@ -80,3 +80,11 @@ model Todo {
   completed Boolean  @default(false)
   createdAt DateTime @default(now())
 }
+
+model MediaItem {
+  id        Int      @id @default(autoincrement())
+  title     String
+  s3Key     String   @unique
+  s3Url     String   @db.Text
+  createdAt DateTime @default(now())
+}
