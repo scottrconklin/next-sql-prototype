@@ -5,6 +5,8 @@ import { api, HydrateClient } from "~/trpc/server";
 import { MediaGrid } from "~/app/gallery/_components/media-grid";
 import { UploadForm } from "~/app/gallery/_components/upload-form";
 
+export const dynamic = "force-dynamic";
+
 export default async function GalleryPage() {
   void api.media.getAll.prefetch();
 
